@@ -1,0 +1,62 @@
+<%- include('partials/header') -%>
+
+<div id="wrapper" class="divided">
+
+  <!-- One -->
+        <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+            <div class="content">
+               
+                
+
+                <main class="container">
+                  <div class="row justify-content-center">
+                    <section class="col-6 mt-5">
+
+                      <h1>Get Cooking</h1>
+                      <p class="major">Log in to your existing acocount here</p>
+
+                      <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+                      <div class="alert alert-danger"><%= el.msg %></div>
+                      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+                      messages.info.forEach( el => { %>
+                      <div class="alert alert-info"><%= el.msg %></div>
+                      <% }) %> <% } %>
+                      <form action="/login" method="POST">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            name="email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            name="password"
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </section>
+                  </div>
+                </main>
+
+
+
+            </div>
+            <div class="image">
+                <img src="images/blue-recipes.webp" alt="" />
+            </div>
+        </section>
+
+
+
+<%- include('partials/footer') -%>
