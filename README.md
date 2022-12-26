@@ -1,3 +1,11 @@
+# Video Preview of the App
+
+![new-new-flavortown](https://user-images.githubusercontent.com/98843063/209581504-542fd937-1c24-4d00-8423-598320e01703.gif)
+
+# Link to Live Site
+
+https://flavortown.cyclic.app/
+
 # Install
 
 `npm install`
