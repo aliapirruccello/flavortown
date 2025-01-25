@@ -4,7 +4,7 @@
 
 # Link to Live Site
 
-https://flavortown.cyclic.app/
+[Flavortown App](https://flavortown-app-92977c3e7c68.herokuapp.com/)
 
 # Install
 
